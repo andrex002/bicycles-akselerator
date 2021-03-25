@@ -1,3 +1,3 @@
 # Акселератор проект «Велосипеды»
 
-- Студент: [Андрей Сергеев](https://up.htmlacademy.ru/adaptive/19/user/443953).
+- Студент: [Андрей Сергеев](https://htmlacademy.ru/profile/id443953).
