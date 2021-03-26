@@ -1,0 +1,94 @@
+.main-screen {
+  background: #0e0e0e url("../img/bike-bg@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .main-screen {
+    background-image: url("../img/bike-bg@2x.jpg");
+  }
+}
+.main-screen__wrapper {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 940px;
+  min-height: 825px;
+  padding-top: 181px;
+  padding-bottom: 100px;
+}
+.main-screen__left-block {
+  width: 100%;
+  max-width: 400px;
+}
+.main-screen__logo {
+  margin-bottom: 31px;
+}
+.main-screen__description {
+  color: #fff;
+  letter-spacing: -0.005em;
+}
+.main-screen__description h1 {
+  margin: 0 0 24px;
+  font-size: 46px;
+  line-height: 64px;
+}
+.main-screen__description p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  opacity: 0.8;
+}
+@media (max-width: 1023px) {
+  .main-screen {
+    background: transparent;
+  }
+  .main-screen__wrapper {
+    display: block;
+    max-width: 100%;
+    min-height: 0;
+    padding: 0;
+  }
+  .main-screen__left-block {
+    max-width: 100%;
+    min-height: 340px;
+    padding: 25px 20px 50px;
+    background-image: url("../img/bike-bg@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .main-screen__left-block {
+      background-image: url("../img/bike-bg@2x.jpg");
+    }
+  }
+  .main-screen__logo {
+    margin-bottom: 89px;
+  }
+  .main-screen__description {
+    max-width: 475px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .main-screen__description h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .main-screen__description p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .main-screen__left-block {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 70px;
+  }
+  .main-screen__logo {
+    margin-bottom: 75px;
+  }
+}

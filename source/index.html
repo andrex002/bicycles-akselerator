@@ -38,15 +38,51 @@
         fill="#1F1E25" />
     </symbol>
   </svg>
-  <header class="page-header">
-    
+  <header class="page-header page-header--no-js">
+    <div class="page-header__wrapper">
+      <button class="page-header__burger burger-btn" type="button">
+        Открыть/закрыть меню
+        <span class="burger-btn__line"></span>
+      </button>
+      <nav class="page-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li>
+            <a href="#">О нас</a>
+          </li>
+          <li>
+            <a href="#">Виды велосипедов</a>
+          </li>
+          <li>
+            <a href="#">Видео про велосипеды</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="main">
-    
+    <section class="main-screen">
+      <div class="main-screen__wrapper">
+        <div class="main-screen__left-block">
+          <a class="main-screen__logo logo">
+            <img src="img/logo.svg" alt="Логотип" class="logo__icon" width="68" height="21">
+          </a>
+          <div class="main-screen__description">
+            <h1>Мы продаем велосипеды</h1>
+            <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+          </div>
+        </div>
+        <form class="main-screen__form feedback-form">
+          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <input type="text" name="user-name" placeholder="Введите Ваше Имя" required>
+          <input type="tel" name="user-phone" placeholder="Введите Ваш номер телефона" required>
+          <button>Подобрать велосипед мечты</button>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer class="page-footer">
-    
-  </footer>
   <script src="js/main.js"></script>
 </body>
 
