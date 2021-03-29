@@ -2,17 +2,31 @@
 
 document.addEventListener("DOMContentLoaded", function() {
   const pageHeader = document.querySelector('.page-header');
-  pageHeader.classList.remove('page-header--no-js');
+  const burgerBtn = pageHeader.querySelector('.burger-btn');
+  const mainNavLinks = pageHeader.querySelectorAll('.main-nav a');
   let closedMenu = true;
 
-  const burgerBtn = pageHeader.querySelector('.burger-btn');
-  burgerBtn.addEventListener('click', function() {
+  const togglesMenuState = function() {
     if(window.innerWidth < 768) {
       document.body.style.overflow = closedMenu ? 'hidden' : '';
       closedMenu = !closedMenu;
     }
     pageHeader.classList.toggle('page-header--opened');
+  };
+
+  pageHeader.classList.remove('page-header--no-js');
+
+  burgerBtn.addEventListener('click', function() {
+    togglesMenuState();
   });
+
+  for(let i = 0; i < mainNavLinks.length; i++) {
+    mainNavLinks[i].addEventListener('click', function () {
+      if(window.innerWidth < 1024) {
+        togglesMenuState();
+      }
+    });
+  }
 
   // Маска на поле телефона
   [].forEach.call(document.querySelectorAll('input[type=tel]'), function (input) {

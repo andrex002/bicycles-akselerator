@@ -47,7 +47,7 @@
       <nav class="page-header__nav main-nav">
         <ul class="main-nav__list">
           <li>
-            <a href="#">О нас</a>
+            <a href="#about">О нас</a>
           </li>
           <li>
             <a href="#">Виды велосипедов</a>
@@ -80,6 +80,52 @@
           <input type="tel" name="user-phone" placeholder="Введите Ваш номер телефона" required>
           <button>Подобрать велосипед мечты</button>
         </form>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about__wrapper">
+        <h2 class="about__title section-title">Несколько фактов о нас</h2>
+        <ol class="about__list">
+          <li>Самый широкий выбор велосипедов!</li>
+          <li>Доставка велосипедов по всей России!</li>
+          <li>Большой выбор крутых аксессуаров!</li>
+          <li>Профессиональные консультации!</li>
+        </ol>
+      </div>
+    </section>
+    <section class="types-bicycles">
+      <div class="types-bicycles__wrapper">
+        <h2 class="types-bicycles__title section-title">Виды велосипедов</h2>
+        <ul class="types-bicycles__list">
+          <li class="types-bicycles__item">
+            <div class="types-bicycles__picture">
+              <picture>
+                <source type="image/webp" srcset="img/road-bike@1x.webp 1x, img/road-bike@2x.webp 2x">
+                <img src="img/road-bike@1x.jpg" srcset="img/road-bike@2x.jpg 2x" alt="Дорожный велосипед" width="342" height="503">
+              </picture>
+            </div>
+            <h3 class="types-bicycles__item-title"><a href="#">Дорожный велосипед</a></h3>
+          </li>
+          <li class="types-bicycles__item">
+            <div class="types-bicycles__picture">
+              <picture>
+                <source type="image/webp" srcset="img/mountain-bike@1x.webp 1x, img/mountain-bike@2x.webp 2x">
+                <img src="img/mountain-bike@1x.jpg" srcset="img/mountain-bike@2x.jpg 2x" alt="Горный велосипед" width="342" height="503">
+              </picture>
+            </div>
+            <h3 class="types-bicycles__item-title"><a href="#">Горный велосипед</a></h3>
+          </li>
+          <li class="types-bicycles__item">
+            <div class="types-bicycles__picture">
+              <picture>
+                <source type="image/webp" srcset="img/children-bike@1x.webp 1x, img/children-bike@2x.webp 2x">
+                <img src="img/children-bike@1x.jpg" srcset="img/children-bike@2x.jpg 2x" alt="Детский велосипед" width="342"
+                  height="503">
+              </picture>
+            </div>
+            <h3 class="types-bicycles__item-title"><a href="#">Детский велосипед</a></h3>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
