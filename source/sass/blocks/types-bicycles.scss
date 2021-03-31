@@ -1,11 +1,12 @@
 .types-bicycles {
   background: #f6f7f9;
+  overflow: hidden;
 }
 .types-bicycles__wrapper {
   @include container;
   max-width: 1186px;
   padding-top: 149px;
-  padding-bottom: 97px;
+  padding-bottom: 126px;
 }
 .types-bicycles__title {
   margin: 0 0 62px;
@@ -156,6 +157,7 @@
 }
 @media (max-width: 767px) {
   .types-bicycles__wrapper {
+    padding-top: 45px;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 12px;

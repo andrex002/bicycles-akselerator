@@ -1,8 +1,8 @@
 {
-  "name": "pognali-19",
-  "version": "17.0.0",
+  "name": "bicycles",
+  "version": "1.0.0",
   "private": true,
-  "description": "Личный проект «Погнали» от HTML Academy",
+  "description": "Акселератор «Велосипеды» от HTML Academy",
   "devDependencies": {
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
@@ -21,7 +21,7 @@
     "posthtml-include": "^1.4.3"
   },
   "scripts": {
-    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "stylelint": "stylelint \"source/scss/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp start"
