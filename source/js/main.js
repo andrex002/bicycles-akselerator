@@ -2,6 +2,7 @@
 
 (function() {
   document.addEventListener("DOMContentLoaded", function() {
+
     const pageHeader = document.querySelector('.page-header');
     const burgerBtn = pageHeader.querySelector('.burger-btn');
     const mainNavLinks = pageHeader.querySelectorAll('.main-nav a');

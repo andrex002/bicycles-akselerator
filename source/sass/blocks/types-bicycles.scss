@@ -2,15 +2,18 @@
   background: #f6f7f9;
   overflow: hidden;
 }
+
 .types-bicycles__wrapper {
   @include container;
   max-width: 1186px;
   padding-top: 149px;
   padding-bottom: 126px;
 }
+
 .types-bicycles__title {
   margin: 0 0 62px;
 }
+
 .types-bicycles__list {
   @include list-reset;
   display: flex;
@@ -18,21 +21,26 @@
   margin-left: -25px;
   margin-right: -25px;
 }
+
 .types-bicycles__item {
   width: calc(33.33% - 50px);
   margin-left: 25px;
   margin-right: 25px;
   margin-bottom: 30px;
+
   &:nth-child(2n) {
     transform: translateY(29px);
   }
+
   &:nth-child(3n) {
     transform: translateY(-10px);
   }
 }
+
 .types-bicycles__picture {
   position: relative;
 }
+
 .types-bicycles__item:nth-child(4n + 1) .types-bicycles__picture {
   &::before {
     content: "";
@@ -46,6 +54,7 @@
     border-radius: 50%;
   }
 }
+
 .types-bicycles__item:nth-child(2n) .types-bicycles__picture {
   &::before {
     content: "";
@@ -58,6 +67,7 @@
     border: 8px solid #0ad9c6;
     z-index: 2;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -70,6 +80,7 @@
     z-index: 2;
   }
 }
+
 .types-bicycles__item:nth-child(3n) .types-bicycles__picture {
   &::before {
     content: "";
@@ -84,11 +95,13 @@
     z-index: 2;
   }
 }
+
 .types-bicycles__picture img {
   position: relative;
   display: block;
   border-radius: 10px;
 }
+
 .types-bicycles__item-title {
   margin: 0;
   padding: 20px 0;
@@ -98,36 +111,45 @@
   letter-spacing: -0.5px;
   text-align: center;
 }
+
 .types-bicycles__item-title a {
   color: inherit;
 }
+
 @media (max-width: 1023px) {
   .types-bicycles__wrapper {
     padding-top: 50px;
     padding-bottom: 20px;
   }
+
   .types-bicycles__title {
     margin-bottom: 30px;
     line-height: 41px;
   }
+
   .types-bicycles__list {
     justify-content: center;
   }
+
   .types-bicycles__item {
     width: 270px;
     max-width: 342px;
+
     &:nth-child(n) {
       transform: translateY(0);
     }
   }
+
   .types-bicycles__picture {
     height: 300px;
   }
+
   .types-bicycles__picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
   .types-bicycles__item:nth-child(4n + 1) .types-bicycles__picture {
     &::before {
       top: auto;
@@ -138,14 +160,17 @@
       border-width: 18px;
     }
   }
+
   .types-bicycles__item:nth-child(2n) .types-bicycles__picture {
     &::before {
       display: none;
     }
+
     &::after {
       display: none;
     }
   }
+
   .types-bicycles__item:nth-child(3n) .types-bicycles__picture {
     &::before {
       width: 68px;
@@ -155,6 +180,7 @@
     }
   }
 }
+
 @media (max-width: 767px) {
   .types-bicycles__wrapper {
     padding-top: 45px;
@@ -162,15 +188,19 @@
     padding-right: 25px;
     padding-bottom: 12px;
   }
+
   .types-bicycles__item {
     margin-bottom: 20px;
   }
+
   .types-bicycles__item-title {
     padding: 21px 0;
   }
+
   .types-bicycles__item:nth-child(4n + 1) .types-bicycles__picture::before {
     transform: translate(-24px, 28px);
   }
+
   .types-bicycles__item:nth-child(3n) .types-bicycles__picture::before {
     transform: translate(14px, -20px);
   }

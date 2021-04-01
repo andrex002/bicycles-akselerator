@@ -4,9 +4,11 @@
   padding-top: 151px;
   padding-bottom: 92px;
 }
+
 .contacts h2 {
   margin: 0 0 30px;
 }
+
 .contacts p {
   max-width: 555px;
   margin: 30px auto 41px;
@@ -15,6 +17,7 @@
   text-align: center;
   color: rgba(0, 0, 0, 0.7);
 }
+
 .contacts__map {
   height: 530px;
   margin-bottom: 35px;
@@ -24,26 +27,31 @@
   background-position: center;
   background-size: cover;
 }
+
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .contacts__map {
     background-image: url("../img/map@2x.png");
   }
 }
+
 .contacts__list {
   @include list-reset;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .contacts__item {
   &--email {
     margin-right: 90px;
   }
 }
+
 .contacts__item a {
   line-height: 32px;
   color: rgba(0, 0, 0, 0.5);
   transition: color 0.2s;
+
   &::before {
     content: "";
     display: inline-block;
@@ -52,10 +60,12 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+
   &:hover {
     color: rgba(0, 0, 0, 0.8);
   }
 }
+
 .contacts__item--email a {
   &::before {
     width: 26px;
@@ -63,6 +73,7 @@
     background-image: url("../img/mail-icon.svg");
   }
 }
+
 .contacts__item--phone a {
   &::before {
     width: 22px;
@@ -70,6 +81,7 @@
     background-image: url("../img/phone-icon.svg");
   }
 }
+
 @media (max-width: 1023px) {
   .contacts__wrapper {
     padding-top: 70px;
@@ -77,45 +89,55 @@
     padding-right: 35px;
     padding-bottom: 52px;
   }
+
   .contacts h2 {
     margin-bottom: 20px;
   }
+
   .contacts p {
     max-width: 100%;
     margin: 20px 0;
   }
+
   .contacts__map {
     height: 545px;
     margin-bottom: 16px;
   }
 }
+
 @media (max-width: 767px) {
   .contacts__wrapper {
     padding-top: 72px;
     padding-left: 15px;
     padding-right: 15px;
   }
+
   .contacts h2 {
     font-size: 18px;
   }
+
   .contacts p {
     padding: 0 10px;
     margin-bottom: 19px;
   }
+
   .contacts__map {
     height: 250px;
     margin-left: -15px;
     margin-right: -15px;
     margin-bottom: 26px;
   }
+
   .contacts__item {
     flex-grow: 0.5;
     padding: 0 10px;
+
     &--email {
       margin-left: auto;
       margin-right: 0;
       margin-bottom: 15px;
     }
+
     &--phone {
       text-align: center;
     }

@@ -1,6 +1,7 @@
 .feedback-form {
   max-width: 327px;
 }
+
 .feedback-form p {
   margin: 0 0 20px;
   font-weight: 600;
@@ -9,6 +10,7 @@
   letter-spacing: -0.005em;
   color: #ffffff;
 }
+
 .feedback-form input {
   display: block;
   width: 100%;
@@ -20,10 +22,12 @@
   border: 1px solid #c9ccd4;
   border-radius: 4px;
   transition: box-shadow 0.2s;
+
   &:hover {
     box-shadow: 0 0 3px 1px #0ad9c6;
   }
 }
+
 .feedback-form button {
   width: 100%;
   padding: 14px 30px;
@@ -36,29 +40,34 @@
   border: 1px solid #0ad9c6;
   transition: background 0.2s, color 0.2s;
   cursor: pointer;
+
   &:hover {
     background: transparent;
     color: #0ad9c6;
   }
 }
+
 @media (max-width: 1024px) {
   .feedback-form {
     max-width: 47%;
     margin: 0 auto;
     padding: 70px 20px 20px;
   }
+
   .feedback-form p {
     margin-bottom: 30px;
     font-size: 18px;
-    color: #000;
+    color: #000000;
   }
 }
+
 @media (max-width: 767px) {
   .feedback-form {
     max-width: 100%;
     padding-left: 16px;
     padding-right: 16px;
   }
+
   .feedback-form p {
     margin-bottom: 20px;
   }
