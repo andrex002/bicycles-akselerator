@@ -35,6 +35,7 @@
 }
 
 html {
+  height: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -46,6 +47,7 @@ html {
 }
 
 body {
+  height: 100%;
   min-width: 320px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 16px;
